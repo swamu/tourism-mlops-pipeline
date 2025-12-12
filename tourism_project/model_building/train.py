@@ -142,4 +142,4 @@ def train_models():
     print("\nTraining complete!")
 
 if __name__ == "__main__":
-train_models()
+    train_models()
