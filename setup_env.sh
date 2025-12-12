@@ -9,13 +9,13 @@ echo ""
 # Check if .env file exists
 if [ ! -f .env ]; then
     echo "Creating .env file template..."
-    cat > .env << 'ENVEOF'
+cat > .env << 'ENVEOF'
 # Hugging Face Token
 # Get your token from: https://huggingface.co/settings/tokens
 HF_TOKEN=your_new_token_here
 ENVEOF
-    echo "✓ .env file created"
-    echo ""
+echo "✓ .env file created"
+echo ""
     echo "Please edit .env file and add your HF token, then run:"
     echo "  source setup_env.sh"
 else
@@ -24,7 +24,7 @@ else
     
     if [ -z "$HF_TOKEN" ] || [ "$HF_TOKEN" = "your_new_token_here" ]; then
         echo "WARNING: HF_TOKEN not set properly!"
-        echo ""
+echo ""
         echo "Steps to fix:"
         echo "1. Get your token from: https://huggingface.co/settings/tokens"
         echo "2. Edit .env file: nano .env"
@@ -33,7 +33,7 @@ else
     else
         echo "✓ HF_TOKEN loaded successfully"
         echo "✓ Token starts with: ${HF_TOKEN:0:8}..."
-        echo ""
+echo ""
         echo "Environment is ready!"
     fi
 fi

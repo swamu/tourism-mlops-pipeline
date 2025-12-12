@@ -13,7 +13,7 @@ RUN pip3 install -r requirements.txt
 RUN useradd -m -u 1000 user
 USER user
 ENV HOME=/home/user \
-	PATH=/home/user/.local/bin:$PATH
+PATH=/home/user/.local/bin:$PATH
 
 WORKDIR $HOME/app
 

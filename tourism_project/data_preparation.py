@@ -11,7 +11,7 @@ def prepare_data():
     if not hf_token:
         raise ValueError("HF_TOKEN environment variable not set")
     
-    repo_id = "swamu/tourism-dataset"  # UPDATE THIS with your repo
+    repo_id = "swamu/tourism-dataset"
     
     print("Loading dataset from local file...")
     df = pd.read_csv("tourism_project/data/tourism.csv")
@@ -26,9 +26,9 @@ def prepare_data():
     # Split the dataset
     print("\nSplitting dataset...")
     train_df, test_df = train_test_split(
-        df_cleaned, 
-        test_size=0.2, 
-        random_state=42, 
+        df_cleaned,
+        test_size=0.2,
+        random_state=42,
         stratify=df_cleaned['ProdTaken']
     )
     print(f"Training set shape: {train_df.shape}")
@@ -38,7 +38,7 @@ def prepare_data():
     os.makedirs("tourism_project/data/processed", exist_ok=True)
     train_df.to_csv("tourism_project/data/processed/train.csv", index=False)
     test_df.to_csv("tourism_project/data/processed/test.csv", index=False)
-    print("\n✅ Datasets saved locally")
+    print("\nDatasets saved locally")
     
     # Upload to HF Hub
     print("\nUploading to Hugging Face Hub...")
@@ -60,7 +60,7 @@ def prepare_data():
         token=hf_token
     )
     
-    print(f"\n✅ Data preparation complete! Datasets uploaded to: https://huggingface.co/datasets/{repo_id}")
+    print(f"\nData preparation complete! Datasets uploaded to: https://huggingface.co/datasets/{repo_id}")
 
 if __name__ == "__main__":
     prepare_data()

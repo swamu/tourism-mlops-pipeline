@@ -17,9 +17,9 @@ An end-to-end MLOps pipeline for predicting customer purchase behavior for the W
 
 ```
 Data Registration → Data Preparation → Model Training → Model Deployment
- ↓ ↓ ↓ ↓
- Hugging Face Train/Test Split MLflow Tracking Streamlit App
- Dataset Hub Feature Engineering Model Selection Docker Container
+↓ ↓ ↓ ↓
+Hugging Face Train/Test Split MLflow Tracking Streamlit App
+Dataset Hub Feature Engineering Model Selection Docker Container
 ```
 
 ## Features
@@ -59,9 +59,9 @@ tourism-mlops-pipeline/
 │ ├── data/ # Dataset files
 │ ├── model_building/ # Training scripts
 │ ├── deployment/ # Deployment files
-│ ├── data_registration.py 
-│ ├── data_preparation.py 
-│ └── requirements.txt 
+│ ├── data_registration.py
+│ ├── data_preparation.py
+│ └── requirements.txt
 └── README.md
 ```
 
@@ -76,7 +76,7 @@ tourism-mlops-pipeline/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/tourism-mlops-pipeline.git
+git clone https://github.com/swamu/tourism-mlops-pipeline.git
 cd tourism-mlops-pipeline
 ```
 
@@ -118,9 +118,11 @@ The GitHub Actions workflow automatically:
 
 ### Setup GitHub Actions
 
-1. Add `HF_TOKEN` to repository secrets
-2. Push code to trigger pipeline
-3. Monitor workflow in Actions tab
+Getting the automated pipeline running is straightforward:
+
+1. **Configure the token**: Navigate to repository Settings > Secrets and variables > Actions, then add a new secret named `HF_TOKEN` with the Hugging Face token value
+2. **Push the code**: Once pushed to the main branch, the workflow kicks off automatically
+3. **Watch it run**: The Actions tab shows real-time progress of each pipeline stage
 
 ## Deployment
 
@@ -145,7 +147,7 @@ This project is licensed under the MIT License.
 
 ## Authors
 
-- Your Name - MLOps Engineer
+- Name - MLOps Engineer
 
 ## Acknowledgments
 
@@ -155,4 +157,4 @@ This project is licensed under the MIT License.
 
 ---
 
- Star this repository if you find it helpful!
+Star this repository if find it helpful!
