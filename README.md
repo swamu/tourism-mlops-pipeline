@@ -147,11 +147,10 @@ This project is licensed under the MIT License.
 
 ## Authors
 
-- Name - MLOps Engineer
+- Swati Mukherjee
 
 ## Acknowledgments
 
-- "Visit with Us" travel company for the business case
 - Hugging Face for hosting infrastructure
 - MLflow for experiment tracking
 
