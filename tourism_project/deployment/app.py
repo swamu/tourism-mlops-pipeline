@@ -6,13 +6,13 @@ import os
 
 # Page configuration
 st.set_page_config(
-page_title="Tourism Package Predictor",
-page_icon="",
-layout="wide"
+    page_title="Tourism Package Predictor",
+    page_icon="",
+    layout="wide"
 )
 
 # Title and description
-st.title(" Wellness Tourism Package Prediction")
+st.title("Wellness Tourism Package Prediction")
 st.markdown("""
 This application predicts whether a customer will purchase the Wellness Tourism Package.
 Enter customer details below to get a prediction.

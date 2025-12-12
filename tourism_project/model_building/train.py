@@ -7,7 +7,7 @@ import mlflow.sklearn
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import (RandomForestClassifier, BaggingClassifier,
-AdaBoostClassifier, GradientBoostingClassifier)
+                             AdaBoostClassifier, GradientBoostingClassifier)
 from xgboost import XGBClassifier
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score

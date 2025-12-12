@@ -30,7 +30,6 @@ def deploy_to_huggingface():
     # Create README for Space
     readme_content = """---
 title: Tourism Package Prediction
-emoji:
 colorFrom: blue
 colorTo: green
 sdk: docker
