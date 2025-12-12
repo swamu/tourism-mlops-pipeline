@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model files (large)
+*.pkl
+*.h5
+*.pt
+
+# Data (if sensitive)
+# Uncomment if needed:
+# *.csv
+
+# Environment variables
+.env
