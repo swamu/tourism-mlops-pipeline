@@ -1,28 +1,28 @@
 # Tourism Package Prediction MLOps Pipeline
 
 [![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-blue)](https://github.com/features/actions)
-[![Hugging Face](https://img.shields.io/badge/🤗-Hugging%20Face-yellow)](https://huggingface.co/)
+[![Hugging Face](https://img.shields.io/badge/-Hugging%20Face-yellow)](https://huggingface.co/)
 [![MLflow](https://img.shields.io/badge/MLflow-Tracking-orange)](https://mlflow.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-red)](https://streamlit.io/)
 
-## 📋 Project Overview
+## Project Overview
 
 An end-to-end MLOps pipeline for predicting customer purchase behavior for the Wellness Tourism Package. This project implements automated data processing, model training with experiment tracking, and deployment using CI/CD best practices.
 
-## 🎯 Business Problem
+## Business Problem
 
 "Visit with Us," a leading travel company, needs to efficiently identify customers likely to purchase the Wellness Tourism Package. This ML solution automates customer targeting, improving marketing efficiency and conversion rates.
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 Data Registration → Data Preparation → Model Training → Model Deployment
-        ↓                  ↓                 ↓                ↓
-   Hugging Face      Train/Test Split    MLflow Tracking   Streamlit App
-   Dataset Hub       Feature Engineering  Model Selection   Docker Container
+ ↓ ↓ ↓ ↓
+ Hugging Face Train/Test Split MLflow Tracking Streamlit App
+ Dataset Hub Feature Engineering Model Selection Docker Container
 ```
 
-## 🚀 Features
+## Features
 
 - **Automated Data Pipeline**: Registers and preprocesses datasets on Hugging Face Hub
 - **ML Experimentation**: Trains 6 algorithms with hyperparameter tuning and MLflow tracking
@@ -31,7 +31,7 @@ Data Registration → Data Preparation → Model Training → Model Deployment
 - **Interactive UI**: Streamlit web app for real-time predictions
 - **Containerized**: Docker-based deployment on Hugging Face Spaces
 
-## 📊 Model Performance
+## Model Performance
 
 | Model | F1 Score | Accuracy | Precision | Recall | ROC AUC |
 |-------|----------|----------|-----------|--------|---------|
@@ -41,7 +41,7 @@ Data Registration → Data Preparation → Model Training → Model Deployment
 | Decision Tree | 0.7103 | 0.8983 | 0.7863 | 0.6478 | 0.8116 |
 | AdaBoost | 0.3850 | 0.8414 | 0.7593 | 0.2579 | 0.8272 |
 
-## 🛠️ Technologies
+## Technologies
 
 - **ML/Data**: Python, pandas, scikit-learn, XGBoost
 - **Experiment Tracking**: MLflow
@@ -49,23 +49,23 @@ Data Registration → Data Preparation → Model Training → Model Deployment
 - **CI/CD**: GitHub Actions
 - **Version Control**: Git, Hugging Face Hub
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 tourism-mlops-pipeline/
 ├── .github/workflows/
-│   └── pipeline.yml              # CI/CD workflow
+│ └── pipeline.yml # CI/CD workflow
 ├── tourism_project/
-│   ├── data/                     # Dataset files
-│   ├── model_building/           # Training scripts
-│   ├── deployment/               # Deployment files
-│   ├── data_registration.py      
-│   ├── data_preparation.py       
-│   └── requirements.txt          
+│ ├── data/ # Dataset files
+│ ├── model_building/ # Training scripts
+│ ├── deployment/ # Deployment files
+│ ├── data_registration.py 
+│ ├── data_preparation.py 
+│ └── requirements.txt 
 └── README.md
 ```
 
-## 🚦 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.9+
@@ -108,7 +108,7 @@ cd tourism_project/deployment
 streamlit run app.py
 ```
 
-## 🔄 CI/CD Pipeline
+## CI/CD Pipeline
 
 The GitHub Actions workflow automatically:
 1. Registers dataset on Hugging Face
@@ -122,12 +122,12 @@ The GitHub Actions workflow automatically:
 2. Push code to trigger pipeline
 3. Monitor workflow in Actions tab
 
-## 🌐 Deployment
+## Deployment
 
 - **Model**: [huggingface.co/swamu/tourism-prediction-model](https://huggingface.co/swamu/tourism-prediction-model)
 - **Live App**: [huggingface.co/spaces/swamu/tourism-prediction-app](https://huggingface.co/spaces/swamu/tourism-prediction-app)
 
-## 📈 MLflow Tracking
+## MLflow Tracking
 
 View experiment runs and metrics:
 ```bash
@@ -135,19 +135,19 @@ mlflow ui
 ```
 Navigate to `http://localhost:5000`
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
 
-## 👥 Authors
+## Authors
 
 - Your Name - MLOps Engineer
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - "Visit with Us" travel company for the business case
 - Hugging Face for hosting infrastructure
@@ -155,4 +155,4 @@ This project is licensed under the MIT License.
 
 ---
 
-⭐ Star this repository if you find it helpful!
+ Star this repository if you find it helpful!
